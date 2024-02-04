@@ -1,0 +1,16 @@
+﻿<Page x:Class="BestGame.Pages.NewGameCharactersSelectionPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:BestGame.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="1080" d:DesignWidth="1920"
+      Title="NewGameCharactersSelectionPage">
+
+    <Grid>
+        <Image Source="\Images\warrior.png" Width="500" Height="1080" HorizontalAlignment="Left" MouseDown="Warrior_MouseDown"/>
+
+        <Image Source="\Images\wizard.png" Width="500" Height="1080" HorizontalAlignment="Left" MouseDown="Wizard_MouseDown" Margin="681,0,0,0" />
+    </Grid>
+</Page>

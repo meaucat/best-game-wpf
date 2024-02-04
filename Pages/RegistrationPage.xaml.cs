@@ -24,5 +24,11 @@ namespace BestGame.Pages
         {
             InitializeComponent();
         }
+
+
+        private void TextBlock_PreviewMouseDown(object sender, MouseButtonEventArgs e)
+        {
+            NavigationService.Navigate(new AuthorizationPage());
+        }
     }
 }

@@ -16,23 +16,23 @@ using System.Windows.Shapes;
 namespace BestGame.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для AuthorizationPage.xaml
+    /// Логика взаимодействия для NewGameCharactersSelectionPage.xaml
     /// </summary>
-    public partial class AuthorizationPage : Page
+    public partial class NewGameCharactersSelectionPage : Page
     {
-        public AuthorizationPage()
+        public NewGameCharactersSelectionPage()
         {
             InitializeComponent();
         }
 
-        private void TextBlock_PreviewMouseDown(object sender, MouseButtonEventArgs e)
+        private void Warrior_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            NavigationService.Navigate(new RegistrationPage());
+
         }
 
-        private void EnterBtn_Click(object sender, RoutedEventArgs e)
+        private void Wizard_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            NavigationService.Navigate(new MainPage());
+
         }
     }
 }

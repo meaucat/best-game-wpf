@@ -35,12 +35,12 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
         
-        <!--Фон Gridа-->
+        <!-- Фон -->
         <Grid.Background>
-            <ImageBrush ImageSource="/Images/backgroundMain.jpg"/>
+            <ImageBrush ImageSource="/Images/backgroundReg.jpg"/>
         </Grid.Background>
 
-        
+        <!-- Добро пожаловать -->
         <TextBlock Grid.Row="2" Grid.Column="3" Grid.ColumnSpan="4" FontSize="60" HorizontalAlignment="Center" VerticalAlignment="Center" Text="Добро пожаловать в игру!"/>
         <TextBlock Grid.Row="3" Grid.Column="3" Grid.ColumnSpan="4" FontSize="35" HorizontalAlignment="Center" VerticalAlignment="Top" Text="Авторизуйтесь, либо войдите в аккаунт"/>
 
@@ -52,7 +52,8 @@
         <TextBlock Text="Введите пароль" Grid.Row="5" Grid.Column="3" Grid.ColumnSpan="2" FontSize="25" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
         <TextBox x:Name="PasswordTB" Grid.Row="6" Grid.Column="3" Grid.ColumnSpan="4" Opacity="0.5" Padding="10 0 0 0" VerticalContentAlignment="Center" FontSize="25" Style="{StaticResource RoundTextBox}"/>
 
-        <Button x:Name="EnterBtn" Grid.Row="7" Grid.Column="4" Grid.RowSpan="2" Grid.ColumnSpan="2" Height="100" Style="{StaticResource RoundButton}" Content="Войти" FontSize="30" Background="Transparent" BorderThickness="2"/>
+        <!-- Вход -->
+        <Button x:Name="EnterBtn" Grid.Row="7" Grid.Column="4" Grid.RowSpan="2" Grid.ColumnSpan="2" Height="100" Style="{StaticResource RoundButton}" Content="Войти" FontSize="30" Background="Transparent" BorderThickness="2" Click="EnterBtn_Click"/>
         <TextBlock Grid.Row="8" Grid.Column="4" Grid.ColumnSpan="2" Text="Еще нет аккаунта? Создать" FontSize="20" VerticalAlignment="Center" Margin="0 15 0 0" HorizontalAlignment="Center"/>
         <TextBlock Grid.Row="8" Grid.Column="4" Grid.ColumnSpan="2" Text="Создать" FontSize="20" VerticalAlignment="Center" Margin="173 15 0 0" HorizontalAlignment="Center" Style="{StaticResource HoverUnderlineStyle}" PreviewMouseDown="TextBlock_PreviewMouseDown"/>
     </Grid>

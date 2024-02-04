@@ -16,23 +16,18 @@ using System.Windows.Shapes;
 namespace BestGame.Pages
 {
     /// <summary>
-    /// Логика взаимодействия для AuthorizationPage.xaml
+    /// Логика взаимодействия для MainPage.xaml
     /// </summary>
-    public partial class AuthorizationPage : Page
+    public partial class MainPage : Page
     {
-        public AuthorizationPage()
+        public MainPage()
         {
             InitializeComponent();
         }
 
-        private void TextBlock_PreviewMouseDown(object sender, MouseButtonEventArgs e)
+        private void NewGameBtn_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new RegistrationPage());
-        }
-
-        private void EnterBtn_Click(object sender, RoutedEventArgs e)
-        {
-            NavigationService.Navigate(new MainPage());
+            NavigationService.Navigate(new NewGameCharactersSelectionPage());
         }
     }
 }
